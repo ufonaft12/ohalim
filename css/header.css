@@ -106,3 +106,51 @@ ul {
 
 .banner__decription {
   font-size: 22px; }
+
+.search__section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px auto;
+  background: #f2fbfe; }
+
+.inner-flex {
+  display: flex;
+  min-height: 108px;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.phone__group {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  min-width: 320px;
+  justify-content: space-between; }
+
+.phone__text {
+  color: #00b8f1;
+  font-size: 24px;
+  margin-left: 20px; }
+
+.search__form {
+  display: flex;
+  align-items: center;
+  width: 50%; }
+  .search__form .form-group {
+    display: flex;
+    margin: auto;
+    justify-content: space-between; }
+  .search__form form {
+    width: 100%;
+    margin-bottom: 0; }
+
+.form-control {
+  max-width: 210px;
+  border-radius: 0; }
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 0; }
+
+.btn-success {
+  background: #61ce70; }
