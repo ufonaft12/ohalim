@@ -138,8 +138,8 @@ ul {
  font-size: 21px;
  font-weight: bold;
  line-height: 1.429;
- margin-left: 2px;
- letter-spacing: 1.6px;
+ margin-left: 5px;
+ letter-spacing: 0.6px;
 }
 
 /*_____________      Content CSS            _______________*/
@@ -228,7 +228,7 @@ ul {
  font-weight: bold;
  line-height: 1.429;
  margin-left: 15px;
- letter-spacing: 3px;
+ letter-spacing: 2px;
 }
 
 .search__form form {
@@ -285,6 +285,7 @@ ul {
  letter-spacing: 1.5px;
  line-height: 34px;
  margin-left: 20px;
+ font-weight: bold;
 }
 
 .section1 hr,
@@ -322,7 +323,7 @@ ul {
  font-weight: bold;
  line-height: 1.2;
  text-align: center;
- margin-bottom: 25px;
+ margin-bottom: 28px;
 }
 
 .section1__item-description {
@@ -336,6 +337,7 @@ ul {
  text-align: center;
  background: #f2fbfe;
  padding-top: 65px;
+ margin-bottom: 40px;
 }
 
 .section2__list {
@@ -350,11 +352,11 @@ ul {
  width: 25%;
  margin: 0 15px;
  background-color: #fff;
+ padding-bottom: 40px;
 }
 
 .section2__item-img {
- margin-bottom: 15px;
- padding-top: 40px;
+ margin-bottom: 25px;
 }
 
 .section2__item-img img {
@@ -363,8 +365,89 @@ ul {
 
 .section2__item-description {
  font-size: 15px;
+ line-height: 22px;
+ margin-top: -10px;
+ padding: 0px 25px;
+}
+
+/*______________       FOOTER 1 CSS        _______________*/
+.footer {
+ max-width: 1210px;
+ margin: -10px auto;
+ font-family: 'Rubik', sans-serif;
+ padding-bottom: 20px;
+}
+
+.footer__list {
+ display: inline-flex;
+ justify-content: space-between;
+ width: 100%;
+}
+
+.footer__item {
+ width: 25%;
+ padding: 0 15px;
+}
+
+.footer__item-title {
+ color: #233582;
+ font-size: 20px;
+ line-height: 40px;
+ font-weight: bold;
+ border-bottom: 1px solid #ebebeb;
+}
+
+.footer__item hr {
+ right: 0;
+ background-color: rgb(97, 206, 112);
+ width: 49px;
+ height: 2px;
+ margin: 0;
+ margin-top: -2px;
+}
+
+.footer__item-content {
  line-height: 24px;
- padding: 0 25px;
+ font-size: 14px;
+ margin-top: 15px;
+}
+
+.footer__item-content>ul>li {
+ list-style: none;
+}
+
+.footer__item-content table {
+ border: 0;
+ width: 100%;
+}
+
+.footer__item-content>table span {
+ color: #189fd9;
+}
+
+.footer__phone {
+ color: #61ce70;
+}
+
+.footer__bottom {
+ width: 100%;
+ margin-top: 65px;
+ padding-bottom: 20px;
+}
+
+.footer__bottom img {
+ float: left;
+}
+
+.footer__bottom-text {
+ line-height: 20px;
+ float: left;
+ margin-left: 20px;
+}
+
+.footer__bottom-copyright {
+ line-height: 20px;
+ float: right;
 }
 
 /*==========  Mobile First Method  ==========*/
