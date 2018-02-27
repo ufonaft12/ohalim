@@ -198,7 +198,7 @@ ul {
 
 .phone__text {
  color: #00b8f1;
- font-size: 24px;
+ font-size: 23px;
  margin-left: 20px;
 }
 
@@ -219,6 +219,7 @@ ul {
  align-items: center;
  width: 50%;
  display: inline-flex;
+ font-family: 'Rubik', sans-serif;
 }
 
 .search__number {
@@ -273,9 +274,12 @@ ul {
  margin: 0 auto;
  margin-top: 36px;
  max-width: 1170px;
+ font-family: 'Rubik', sans-serif;
+ margin-bottom: 40px;
 }
 
-.section1__title {
+.section1__title,
+.section2__title {
  color: #233582;
  font-size: 34px;
  letter-spacing: 1.5px;
@@ -283,7 +287,8 @@ ul {
  margin-left: 20px;
 }
 
-.section1 hr {
+.section1 hr,
+.section2 hr {
  background-color: rgb(24, 159, 217);
  width: 60px;
  height: 2px;
@@ -291,29 +296,75 @@ ul {
  margin-bottom: 32px;
 }
 
-.section__list {
+.section1__list {
  display: inline-flex;
  justify-content: space-between;
  width: 100%;
 }
 
-.section__item {
+.section1__item {
  width: 33.333%;
  padding: 0 30px;
 }
 
-.item__img {
- margin-bottom: 40px;
+.section1__item-img {
+ margin-bottom: 30px;
 }
 
-.item__title {
+.section1__item-img img {
+ height: 45px;
+}
+
+.section1__item-title,
+.section2__item-title {
  font-size: 23px;
- font-family: "Rubik";
  color: rgb(0, 184, 241);
  font-weight: bold;
  line-height: 1.2;
  text-align: center;
  margin-bottom: 25px;
+}
+
+.section1__item-description {
+ font-size: 15px;
+ line-height: 18px;
+}
+
+/*______________       SECTION 1 CSS        _______________*/
+.section2 {
+ width: 100%;
+ text-align: center;
+ background: #f2fbfe;
+ padding-top: 65px;
+}
+
+.section2__list {
+ display: inline-flex;
+ justify-content: space-between;
+ max-width: 1210px;
+ padding-top: 35px;
+ padding-bottom: 60px;
+}
+
+.section2__item {
+ width: 25%;
+ margin: 0 15px;
+ background-color: #fff;
+}
+
+.section2__item-img {
+ margin-bottom: 15px;
+ padding-top: 40px;
+}
+
+.section2__item-img img {
+ height: 45px;
+}
+
+.section2__item-description {
+ font-size: 15px;
+ line-height: 24px;
+ padding: 0 25px;
 }
 
 /*==========  Mobile First Method  ==========*/
