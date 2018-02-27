@@ -65,7 +65,8 @@ ul {
 /*______________       Header CSS        _______________*/
 .header {
  align-items: center;
- min-height: 100px;
+ max-height: 100px;
+ margin: 0 -4px;
  margin-bottom: 20px;
  border-bottom: 1px solid #e5edee;
  font-family: 'Rubik', sans-serif;
@@ -79,6 +80,7 @@ ul {
 .header__logo {
  border-left: 1px solid #e5edee;
  margin-top: 5px;
+ padding-left: 21px;
 }
 
 .logo__link {
@@ -87,8 +89,9 @@ ul {
 }
 
 .header__menu {
- max-width: 730px;
+ max-width: 710px;
  width: 100%;
+ padding-left: 30px;
 }
 
 .menu {
@@ -130,7 +133,6 @@ ul {
  color: #233582;
  font-size: 21px;
  font-weight: bold;
- font-family: 'Rubik', sans-serif;
  line-height: 1.429;
  margin-left: 2px;
  letter-spacing: 1.6px;
@@ -145,7 +147,7 @@ ul {
  display: flex;
  justify-content: flex-start;
  background: url(../img/banner.jpg) top center no-repeat;
- margin: -3px -10px;
+ margin: 0 -10px;
 }
 
 .banner__group-text {
