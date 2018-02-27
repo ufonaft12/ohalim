@@ -18,11 +18,13 @@
  opacity: 1;
 }
 
-body input:focus:required:invalid, body textarea:focus:required:invalid {
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
  color: #666;
 }
 
-body input:required:valid, body textarea:required:valid {
+body input:required:valid,
+body textarea:required:valid {
  color: #666;
 }
 
@@ -72,7 +74,9 @@ ul {
  font-family: 'Rubik', sans-serif;
 }
 
-.header__logo, .header__menu, .header__phone {
+.header__logo,
+.header__menu,
+.header__phone {
  height: 100px;
  display: flex;
 }
@@ -142,7 +146,8 @@ ul {
 .header__banner {
  position: relative;
  width: 100%;
- height: 100%;
+ height: auto;
+ min-height: 400px;
  color: #fff;
  display: flex;
  justify-content: flex-start;
@@ -151,10 +156,13 @@ ul {
 }
 
 .banner__group-text {
- position: absolute;
+ position: relative;
  display: block;
- bottom: 60px;
+ top: 235px;
  right: 60px;
+ letter-spacing: 2px;
+ line-height: 2;
+ max-height: 140px;
 }
 
 .banner__title {
@@ -170,22 +178,19 @@ ul {
  display: flex;
  width: 100%;
  justify-content: space-between;
- margin: 20px auto;
+ margin-top: 58px;
  background: #f2fbfe;
 }
 
 .inner-flex {
- display: flex;
- min-height: 108px;
- flex-wrap: wrap;
+ display: inline-flex;
+ min-height: 40px;
  width: 100%;
+ justify-content: space-between;
+ margin-left: 18px;
 }
 
 .phone__group {
-
- /*display: flex;
- width: 50%;
- min-width: 320px; */
  justify-content: space-between;
  align-items: center;
 }
@@ -208,6 +213,13 @@ ul {
  justify-content: space-between;
 }
 
+.search-phone__group {
+ justify-content: space-between;
+ align-items: center;
+ width: 50%;
+ display: inline-flex;
+}
+
 .search__form form {
  width: 100%;
  margin-bottom: 0;
@@ -218,8 +230,26 @@ ul {
  border-radius: 0;
 }
 
+.form-control::-webkit-input-placeholder {
+ color: #b7b8b9;
+}
+
+.form-control::-moz-placeholder {
+ color: #b7b8b9;
+}
+
+/* Firefox 19+ */
+.form-control:-moz-placeholder {
+ color: #b7b8b9;
+}
+
+/* Firefox 18- */
+.form-control:-ms-input-placeholder {
+ color: #b7b8b9;
+}
+
 .btn {
- padding: 10px 30px;
+ padding: 5px 37px;
  border-radius: 0;
 }
 
