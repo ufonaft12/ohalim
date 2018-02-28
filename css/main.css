@@ -562,6 +562,22 @@ ul {
   width: auto;
  }
 
+ .phone__text {
+  font-size: 20px;
+ }
+
+ .form-control {
+  max-width: 185px;
+ }
+
+ .footer__bottom img {
+  margin-left: 25px;
+ }
+
+ .footer__bottom-copyright {
+  margin-right: 25px;
+ }
+
 }
 
 /* Large Devices, Wide Screens */
