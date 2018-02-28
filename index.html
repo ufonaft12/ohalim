@@ -94,22 +94,22 @@
      <div class="section2__list">
       <div class="section2__item">
        <div class="section2__item-img"><img src="img/ohel.png" alt="ohel"></div>
-       <div class="section2__item-title">השכרת אוהלים</div>
+       <div class="section2__item-title"><a href="#">השכרת אוהלים</a></div>
        <div class="section2__item-description">השכרת אוהלים מסוגים שונים לכל מטרה, אוהל ענק, אוהל לאירועים, אוהל אבלים ועוד.ישנה אפשרות לקבל ציוד נלווה: השכרת מזרונים ,מחצלות וציוד נילווה</div>
       </div>
       <div class="section2__item">
        <div class="section2__item-img"><img src="img/kisaot.png" alt="kisaot"></div>
-       <div class="section2__item-title">השכרת כסאות</div>
+       <div class="section2__item-title"><a href="#">השכרת כסאות</a></div>
        <div class="section2__item-description">השכרת כסאות מסוגים שונים לאירועים, השכרת כסאות לאוהל אבלים, השכרת כסאות פלסטיק, השירות ניתן בשירות עצמי, או באפשרות של הובלה והרכבה.</div>
       </div>
       <div class="section2__item">
        <div class="section2__item-img"><img src="img/mazgan.png" alt="mazgan"></div>
-       <div class="section2__item-title">השכרת מזגן נייד</div>
+       <div class="section2__item-title"><a href="#">השכרת מזגן נייד</a></div>
        <div class="section2__item-description">שירות השכרת שולחנות לאירועים, השכרת שולחנות לאוהל אבלים, באפשרותך להשכיר אוהל אבלים עם כל הרהיטים הנדרשים.</div>
       </div>
       <div class="section2__item">
        <div class="section2__item-img"><img src="img/shulhan_ohel.png" alt="shulhan_ohel"></div>
-       <div class="section2__item-title">השכרת שולחנות</div>
+       <div class="section2__item-title"><a href="#">השכרת שולחנות</a></div>
        <div class="section2__item-description">שירות השכרת שולחנות לאירועים, השכרת שולחנות לאוהל אבלים, באפשרותך להשכיר אוהל אבלים עם כל הרהיטים הנדרשים.</div>
       </div>
      </div>
@@ -167,7 +167,24 @@
        <div class="footer__item-title">כתובת החנות:</div>
        <hr align="right">
        <div class="footer__item-content">
-        <img src="img/footer_map.jpg" alt="map">
+        <div id="map"></div>
+            <script>
+             function initMap() {
+               var uluru = {lat: 30.8572066, lng: 36.2585535};
+               var map = new google.maps.Map(document.getElementById('map'), {
+                 zoom: 4,
+                 center: uluru
+               });
+               var marker = new google.maps.Marker({
+                 position: uluru,
+                 map: map
+               });
+             }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+    <div class="map__link"><a href="http://digitouch.co.il"></a></div>
        </div>
       </div>
       <div class="footer__item">
