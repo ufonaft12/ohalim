@@ -11,3 +11,13 @@ $('.has_submenu').hover(
 		});
 }
 );
+
+$('.menu__burger').click( function(){
+
+	if ($('.header__menu').hasClass('menu-active')) {
+			$('.header__menu').removeClass('menu-active');
+	} else {
+			$('.header__menu').addClass('menu-active');
+	}
+
+});
