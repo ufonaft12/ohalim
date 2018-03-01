@@ -141,7 +141,7 @@ label {
  position: absolute;
  top: calc(100% - 3px);
  left: 50%;
- transition: 0.3s;
+ transition: 0.7s;
 }
 
 .menu-item:hover::after {
@@ -171,7 +171,7 @@ label {
  background-color: #fff;
  visibility: hidden;
  opacity: 0;
- transition: all 300ms ease;
+ transition: all 0.7s ease;
  margin-right: -4%;
 }
 
@@ -364,7 +364,7 @@ label {
  border: 0;
  box-sizing: border-box;
  cursor: pointer;
- transition: all 500ms ease;
+ transition: all 0.7s ease;
 }
 
 .wpcf7-submit:hover {
@@ -385,7 +385,6 @@ label {
 .section2__title {
  color: #233582;
  font-size: 34px;
- letter-spacing: 1.5px;
  line-height: 34px;
  margin-left: 20px;
  font-weight: bold;
@@ -426,12 +425,12 @@ label {
  font-weight: bold;
  line-height: 1.2;
  text-align: center;
- margin-bottom: 28px;
+ margin-bottom: 16px;
 }
 
 .section1__item-description {
  font-size: 15px;
- line-height: 18px;
+ line-height: 25px;
 }
 
 /*______________       SECTION 2 CSS        _______________*/
@@ -439,7 +438,7 @@ label {
  width: 100%;
  text-align: center;
  background: #f2fbfe;
- padding-top: 65px;
+ padding-top: 48px;
  margin-bottom: 40px;
 }
 
@@ -447,7 +446,6 @@ label {
  display: inline-flex;
  justify-content: space-between;
  max-width: 1210px;
- padding-top: 35px;
  padding-bottom: 60px;
 }
 
@@ -473,15 +471,15 @@ label {
 
 .section2__item-description {
  font-size: 15px;
- line-height: 22px;
- margin-top: -10px;
+ line-height: 24px;
+ margin-top: -5px;
  padding: 0px 25px;
 }
 
 /*______________       FOOTER 1 CSS        _______________*/
 .footer {
  max-width: 1210px;
- margin: -10px auto;
+ margin: -20px auto;
  font-family: 'Rubik', sans-serif;
  padding-bottom: 20px;
 }
@@ -535,7 +533,11 @@ label {
  width: 100%;
 }
 
-.footer__item-content>table span a {
+.footer__item-content table td {
+ height: 24px;
+}
+
+.footer__item-content table span a {
  color: #189fd9;
  text-decoration: none;
 }
@@ -544,12 +546,20 @@ label {
 .footer__phone a {
  color: #61ce70;
  text-decoration: none;
+ margin-top: 5px;
+ font-size: 16px;
+}
+
+.footer__cards img {
+ margin-right: -7px;
 }
 
 .footer__bottom {
  width: 100%;
- margin-top: 65px;
+ margin-top: 75px;
  padding-bottom: 20px;
+ margin-right: -30px;
+ font-size: 15px;
 }
 
 .footer__bottom a {
@@ -564,12 +574,13 @@ label {
 .footer__bottom-text {
  line-height: 20px;
  float: left;
- margin-left: 20px;
+ margin-left: 10px;
 }
 
 .footer__bottom-copyright {
  line-height: 20px;
  float: right;
+ margin-right: 35px;
 }
 
 #map {
@@ -577,7 +588,7 @@ label {
  z-index: 2;
  width: 100%;
  height: 100%;
- max-height: 190px;
+ max-height: 160px;
 }
 
 .map__link {
@@ -658,7 +669,7 @@ label {
   position: fixed;
   right: -50vw;
   top: 100px;
-  transition: all 500ms ease;
+  transition: all 0.7s ease;
   background-color: #fff;
  }
 
@@ -685,7 +696,7 @@ label {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  transition: all 200ms ease;
+  transition: all 0.7s ease;
  }
 
  .menu-item a:hover {
@@ -701,7 +712,7 @@ label {
   background-color: #fff;
   visibility: hidden;
   opacity: 0;
-  transition: all 300ms ease;
+  transition: all 0.7s ease;
   right: 200px;
   top: -40px;
   box-sizing: border-box;
@@ -832,7 +843,7 @@ label {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  transition: all 500ms ease;
+  transition: all 0.7s ease;
  }
 
  .section1__list {
@@ -1017,7 +1028,7 @@ label {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.429;
-  margin-left: 15px;
+  margin-left: 25px;
   letter-spacing: 2px;
  }
 
@@ -1028,7 +1039,7 @@ label {
  }
 
  .wpcf7-text {
-  max-width: 200px;
+  max-width: 230px;
   border-radius: 0;
  }
 
