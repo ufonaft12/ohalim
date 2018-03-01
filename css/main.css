@@ -786,10 +786,10 @@ label {
   cursor: pointer;
   float: right;
   width: 100%;
-  padding: 0;
+  padding: 0 15px;
   text-align: right;
-  height: 80px;
-  line-height: 80px;
+  height: 60px;
+  line-height: 60px;
   box-sizing: border-box;
   border-bottom: 1px grey solid;
  }
@@ -801,10 +801,10 @@ label {
   transition: all 0.7s ease;
  }
 
+ /*
  .menu-item a:hover {
   background-color: lightgrey;
- }
-
+ }*/
  .menu-item_submenu {
   position: relative;
   display: none;
