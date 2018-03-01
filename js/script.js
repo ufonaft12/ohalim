@@ -8,12 +8,9 @@ $('.has_submenu').hover(
 }
 );
 
-$('.menu__burger').click( function(){
-
-	if ($('.header__menu').hasClass('menu-active')) {
-			$('.header__menu').removeClass('menu-active');
-	} else {
-			$('.header__menu').addClass('menu-active');
-	}
-
-});
+	jQuery(document).ready(function() {
+		jQuery('#mobile-menu-btn').click(function(){
+			jQuery(this).toggleClass('active');
+			jQuery('.header__menu').toggleClass('active');
+		});
+	});
