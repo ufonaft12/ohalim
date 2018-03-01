@@ -64,6 +64,17 @@ ul {
  padding: 0;
 }
 
+a {
+ text-decoration: none;
+}
+
+p,
+label {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
 /*______________       Header CSS        _______________*/
 .header {
  position: fixed;
@@ -84,6 +95,7 @@ ul {
 .header__phone {
  height: 100px;
  display: flex;
+ box-sizing: border-box;
 }
 
 .header__logo {
@@ -109,6 +121,7 @@ ul {
 }
 
 .menu-item {
+ position: relative;
  list-style: none;
  display: inline-block;
  margin: 0;
@@ -120,8 +133,33 @@ ul {
  height: 96px;
 }
 
+.menu-item::after {
+ content: ' ';
+ width: 0;
+ height: 3px;
+ background: #1997ed;
+ position: absolute;
+ top: calc(100% - 3px);
+ left: 50%;
+ transition: 0.3s;
+}
+
+.menu-item:hover::after {
+ width: 100%;
+ left: 0;
+}
+
 .menu-item a {
  color: #000;
+ display: block;
+ width: 100%;
+ height: 100%;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+.menu-item a:hover {
+ color: #00b8f1;
 }
 
 .menu-item_submenu {
@@ -153,6 +191,7 @@ ul {
 
 .header__phone {
  margin-top: -3px;
+ padding-top: 25px;
  padding-right: 15px;
  border-right: 1px solid #e5edee;
 }
@@ -166,6 +205,7 @@ ul {
 
 .icon__phone {
  margin-left: 15px;
+ margin-top: 10px;
 }
 
 .phone__label {
@@ -174,12 +214,16 @@ ul {
 }
 
 .phone__number {
- color: #233582;
  font-size: 21px;
  font-weight: bold;
- line-height: 1.429;
- margin-left: 5px;
- letter-spacing: 0.6px;
+ line-height: 1;
+ margin-left: 18px;
+ letter-spacing: 0;
+}
+
+.phone__number a {
+ text-decoration: none;
+ color: #233582;
 }
 
 /*_____________      Content CSS            _______________*/
@@ -188,6 +232,7 @@ ul {
  height: auto;
  margin-top: 120px;
  box-sizing: border-box;
+ max-width: 1210px;
 }
 
 .header__banner {
@@ -199,7 +244,7 @@ ul {
  display: flex;
  justify-content: flex-start;
  background: url(../img/banner.jpg) top center no-repeat;
- margin: 0 auto;
+ margin-left: 15px;
 }
 
 .banner__group-text {
@@ -284,37 +329,46 @@ ul {
  margin: 0 5px;
 }
 
-.form-control {
+.wpcf7-text {
  max-width: 200px;
  border-radius: 0;
+ border: 1px solid rgb(216, 217, 218);
+ height: 38px;
+ padding: 12px;
+ box-sizing: border-box;
 }
 
-.form-control::-webkit-input-placeholder {
+.wpcf7-text::-webkit-input-placeholder {
  color: #b7b8b9;
 }
 
-.form-control::-moz-placeholder {
+.wpcf7-text::-moz-placeholder {
  color: #b7b8b9;
 }
 
 /* Firefox 19+ */
-.form-control:-moz-placeholder {
+.wpcf7-text:-moz-placeholder {
  color: #b7b8b9;
 }
 
 /* Firefox 18- */
-.form-control:-ms-input-placeholder {
+.wpcf7-text:-ms-input-placeholder {
  color: #b7b8b9;
 }
 
-.btn {
- padding: 5px 37px;
- border-radius: 0;
- font-weight: bold;
+.wpcf7-submit {
+ background-color: #61ce70;
+ color: white;
+ width: 103px;
+ height: 38px;
+ border: 0;
+ box-sizing: border-box;
+ cursor: pointer;
+ transition: all 500ms ease;
 }
 
-.btn-success {
- background: #61ce70;
+.wpcf7-submit:hover {
+ background-color: #4ab959;
 }
 
 /*______________       SECTION 1 CSS        _______________*/
@@ -380,7 +434,7 @@ ul {
  line-height: 18px;
 }
 
-/*______________       SECTION 1 CSS        _______________*/
+/*______________       SECTION 2 CSS        _______________*/
 .section2 {
  width: 100%;
  text-align: center;
@@ -402,6 +456,10 @@ ul {
  margin: 0 15px;
  background-color: #fff;
  padding-bottom: 40px;
+}
+
+.section2__item-title a:hover {
+ color: green;
 }
 
 .section2__item-img {
@@ -464,7 +522,12 @@ ul {
 }
 
 .footer__item-content>ul>li {
+ cursor: pointer;
  list-style: none;
+}
+
+.footer__item-content>ul>li:hover {
+ color: #4ab959;
 }
 
 .footer__item-content table {
@@ -472,18 +535,26 @@ ul {
  width: 100%;
 }
 
-.footer__item-content>table span {
+.footer__item-content>table span a {
  color: #189fd9;
+ text-decoration: none;
 }
 
-.footer__phone {
+.footer__phone,
+.footer__phone a {
  color: #61ce70;
+ text-decoration: none;
 }
 
 .footer__bottom {
  width: 100%;
  margin-top: 65px;
  padding-bottom: 20px;
+}
+
+.footer__bottom a {
+ color: black;
+ text-decoration: none;
 }
 
 .footer__bottom img {
@@ -743,17 +814,25 @@ ul {
   width: 100%;
   margin-bottom: 0;
   margin: 0 5px;
+  text-align: center;
  }
 
- .form-control {
-  max-width: 33%;
+ .wpcf7-text {
+  max-width: 60%;
   border-radius: 0;
   display: inline-block;
  }
 
- .form-control .btn {
-  display: inline-block;
-  float: left;
+ .wpcf7-submit {
+  background-color: #61ce70;
+  width: 103px;
+  height: 38px;
+  border: 0;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 500ms ease;
  }
 
  .section1__list {
@@ -851,7 +930,7 @@ ul {
   font-size: 20px;
  }
 
- .form-control {
+ .wpcf7-text {
   max-width: 34%;
  }
 
@@ -897,8 +976,11 @@ ul {
  .inner-flex {
   display: inline-flex;
   min-height: 40px;
+  height: 40px;
   width: 100%;
-  justify-content: space-between; /*margin-left: 18px;*/
+  align-items: center;
+  justify-content: center;
+  margin: 0;
  }
 
  .phone__group {
@@ -925,8 +1007,6 @@ ul {
  }
 
  .search-phone__group {
-  justify-content: space-between;
-  align-items: center;
   width: 50%;
   display: inline-flex;
   font-family: 'Rubik', sans-serif;
@@ -947,7 +1027,7 @@ ul {
   margin: 0 5px;
  }
 
- .form-control {
+ .wpcf7-text {
   max-width: 200px;
   border-radius: 0;
  }
