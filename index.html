@@ -14,101 +14,113 @@
 	<body>
 		
 		<!-- HEADER START -->
-		<header class="header"> 
-					<div class="menu__burger">
-						<a id="mobile-menu-btn" href="#menu">
-							<span></span>
-							<span></span>
-							<span></span>
-						</a>
-					</div>
-					
-					<div class="header__logo">
-						<a class="logo__link" href="/">
-							<div class="logo__pic">
-								<img src="img/logo.png">
-							</div>
-						</a>
-					</div>
-					<div class="header__menu">
-						<nav class="menu" id="menu"> 
-							<li class="menu-item has_submenu">
-								<a href="#">השכרת אוהלים</a>
-								<ul class="menu-item_submenu">
-									<li><a href="#">צור קשר</a></li>
-									<li><a href="#">צור קשר</a></li>
-									<li><a href="#">צור קשר</a></li>
-									<li><a href="#">צור קשר</a></li>
-								</ul>
-							</li>
-							<li class="menu-item"><a href="#">השכרת ציוד לאירועים</a></li>
-							
-							<li class="menu-item"><a href="#">אזורי שירות</a></li>
-							<li class="menu-item"><a href="#">צור קשר</a></li> 
-						</nav>
-					</div>
-					<div class="header__phone">
-						<div class="icon">
-							<a href="tel:0723728117">
-								<img class="icon__phone" src="img/phone.png">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="menu__burger">
+							<a id="mobile-menu-btn" href="#menu">
+								<span></span>
+								<span></span>
+								<span></span>
 							</a>
 						</div>
-						<div class="phone__group">
-							<div class="phone__label">
-								התקשרו לפרטים:
+						
+						<div class="header__logo">
+							<a class="logo__link" href="/">
+								<div class="logo__pic">
+									<img src="img/logo.png">
+								</div>
+							</a>
+						</div>
+						<div class="header__menu">
+							<nav class="menu" id="menu">
+								<li class="menu-item has_submenu">
+									<a href="#">השכרת אוהלים</a>
+									<ul class="menu-item_submenu">
+										<li><a href="#">צור קשר</a></li>
+										<li><a href="#">צור קשר</a></li>
+										<li><a href="#">צור קשר</a></li>
+										<li><a href="#">צור קשר</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="#">השכרת ציוד לאירועים</a></li>
+								
+								<li class="menu-item"><a href="#">אזורי שירות</a></li>
+								<li class="menu-item"><a href="#">צור קשר</a></li>
+							</nav>
+						</div>
+						<div class="header__phone">
+							<div class="icon">
+								<a href="tel:0723728117">
+									<img class="icon__phone" src="img/phone.png">
+								</a>
 							</div>
-							<div class="phone__number">
-								<a href="tel:0723728117">072-3728117</a>
+							<div class="phone__group">
+								<div class="phone__label">
+									התקשרו לפרטים:
+								</div>
+								<div class="phone__number">
+									<a href="tel:0723728117">072-3728117</a>
+								</div>
 							</div>
 						</div>
-					</div> 
-		</header>
-		<!-- HEADER START -->
-		
-		<div class="section__banner">
-				<div class="header__banner">
-					<div class="banner__group-text">
-						<div class="banner__title">רוניאל אוהלים וציוד לאירועים</div>
-						<div class="banner__descripton">מתמחים במתן מגוון פתרונות של השכרת אוהלים וציוד לאירועים</div>
 					</div>
 				</div>
-		</div>
+			</div>
+		</header>
+		<!-- HEADER END -->
 		
+		<div class="section__banner">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header__banner">
+							<div class="banner__group-text">
+								<div class="banner__title">רוניאל אוהלים וציוד לאירועים</div>
+								<div class="banner__descripton">מתמחים במתן מגוון פתרונות של השכרת אוהלים וציוד לאירועים</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- FORM START -->
 		<div class="search__section ">
-					<div class="inner-flex">
+			<div class="inner-flex">
+				
+				<div class="search-phone__group">
+					<div class="phone__text">לקבל פרטים נוספים חייגו:</div>
+					<div class="search__number"><a href="tel:0723728117">072-3728117</a> </div>
+					<div class="phone__text">או שלחו טופס: </div>
+				</div>
+				
+				<div class="search__form">
+					<form name="search__form" action="/#wpcf7-f549-o1" method="post" class="wpcf7-form" novalidate="novalidate">
 						
-						<div class="search-phone__group">
-							<div class="phone__text">לקבל פרטים נוספים חייגו:</div>
-							<div class="search__number"><a href="tel:0723728117">072-3728117</a> </div>
-							<div class="phone__text">או שלחו טופס: </div>
-						</div>
+						<p>
+							<label class="user">
+								<span class="wpcf7-form-control-wrap your-name">
+									<input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="שם מלא" type="text">
+								</span>
+							</label>
+							
+							<label class="phone">
+								<span class="wpcf7-form-control-wrap tel-928">
+									<input name="tel-928" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="טלפון" type="tel">
+								</span>
+							</label>
+							
+							
+							<input value="שלח" class="wpcf7-form-control wpcf7-submit" type="submit">
+							<span class="ajax-loader"></span>
+						</p>
 						
-						<div class="search__form">
-							<form name="search__form" action="/#wpcf7-f549-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-								
-								<p>
-									<label class="user">
-										<span class="wpcf7-form-control-wrap your-name">
-											<input name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="שם מלא" type="text">
-										</span>
-									</label>
-									
-									<label class="phone">
-										<span class="wpcf7-form-control-wrap tel-928">
-											<input name="tel-928" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="טלפון" type="tel">
-										</span>
-									</label>
-									
-									
-									<input value="שלח" class="wpcf7-form-control wpcf7-submit" type="submit">
-									<span class="ajax-loader"></span>
-								</p>
-								
-							</form>
-						</div>
-						
-					</div>
+					</form>
+				</div>
+				
+			</div>
 		</div>
 		<!-- FORM END -->
 		
