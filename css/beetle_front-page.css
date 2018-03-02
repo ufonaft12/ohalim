@@ -1,0 +1,399 @@
+/* front-page */
+section.banner-1 {
+ margin: 22px auto;
+}
+
+section.banner-1 h1,
+section.banner-1 h2 {
+ color: #fff;
+}
+
+section.banner-1 h1 {
+ font-size: 41px;
+ font-weight: 700;
+ position: relative;
+ padding: 21.15% 0 9px;
+ margin: 0 47px;
+}
+
+section.banner-1 h1:after {
+ content: "";
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ width: 60px;
+ height: 3px;
+ background: #189fd9;
+}
+
+section.banner-1 h2 {
+ font-size: 22px;
+ font-weight: 400;
+ padding: 14px 47px 4.5%;
+ margin: 0;
+}
+
+section.contacts {
+ background: #f2fbfe;
+ padding: 33px 0;
+}
+
+section.contacts .col-right {
+ width: 37.665%;
+ max-width: 37.665%;
+}
+
+section.contacts .col-left {
+ width: 62.335%;
+ max-width: 62.335%;
+}
+
+section.contacts .col-right p,
+section.contacts .col-right a,
+section.contacts .col-left > p {
+ line-height: 40px;
+}
+
+section.contacts p {
+ font-size: 24px;
+ color: #00b8f1;
+ margin: 0;
+ display: inline-block;
+ text-align: right;
+ float: right;
+}
+
+section.contacts a {
+ font-size: 24px;
+ font-weight: 700;
+ color: #233582;
+ float: right;
+ padding-right: 10px;
+}
+
+section.contacts a:hover,
+section.contacts a:focus {
+ text-decoration: none;
+ color: #61ce70;
+}
+
+section.contacts .col-left > p {
+ margin-left: 20px;
+ display: inline-block;
+ float: right;
+}
+
+section.contacts .col-left > div {
+ max-width: calc(100% - 158px);
+ float: left;
+}
+
+section.contacts form {
+ margin-top: 1px;
+}
+
+section.contacts form p {
+ display: inline-block;
+ float: right;
+ max-width: calc(100% - 108px);
+}
+
+section.contacts form input {
+ width: calc(50% - 10px);
+ margin-left: 10px;
+ text-align: right;
+ color: #b7b8b9;
+ font-size: 16px;
+ border: 1px solid #d8d9da;
+ padding: 7px 15px;
+}
+
+section.contacts form input[type="submit"] {
+ width: 103px;
+ margin-right: 5px;
+ margin-left: 0;
+ text-align: center;
+ background: #61ce70;
+ font-weight: 700;
+ font-size: 18px;
+ color: #fff;
+ border: 0;
+ margin-top: 1px;
+ padding: 8px 15px 6px;
+}
+
+section.contacts form .ajax-loader {
+ display: none;
+}
+
+section.info {
+ padding: 29px 0 60px;
+}
+
+section.info h2,
+section.info-2 h2 {
+ text-align: center;
+ position: relative;
+ font-weight: bold;
+ font-size: 34px;
+ color: #233582;
+ padding-bottom: 13px;
+ margin-bottom: 27px;
+}
+
+section.info h2:after,
+section.info-2 h2:after {
+ content: "";
+ position: absolute;
+ bottom: 0;
+ height: 3px;
+ width: 60px;
+ background: #189fd9;
+ right: calc(50% - 30px);
+}
+
+section.info .blocks,
+section.info-2 .blocks {
+ text-align: center;
+}
+
+section.info .img,
+section.info-2 .img {
+ min-height: 60px;
+ line-height: 60px;
+}
+
+section.info h3,
+section.info-2 h3 {
+ text-align: center;
+ font-weight: bold;
+ font-size: 23px;
+ color: #00b8f1;
+ margin: 25px 0 13px;
+}
+
+section.info p,
+section.info-2 p {
+ text-align: center;
+ font-size: 15px;
+ color: #44474c;
+ line-height: 25px;
+ margin: 0;
+}
+
+section.info-2 {
+ background: #f2fbfe;
+ padding: 51px 0 60px;
+}
+
+section.info-2 .blocks .col-md-3 {
+ padding-right: 0;
+ padding-left: 0;
+}
+
+section.info-2 .blocks .col-md-3:nth-child(4n) {
+ padding-left: 0;
+}
+
+section.info-2 .block {
+ background: #fff;
+ padding: 30px 25px 37px;
+ height: 100%;
+}
+
+section.info-2 h2 {
+ margin-bottom: 33px;
+}
+
+section.info-2 h3 {
+ margin: 18px 0 9px;
+}
+
+@media screen and (max-width:1200px) {
+ section.banner-1 .background {
+  margin: 0 -15px;
+ }
+
+ section.contacts .col-right {
+  width: 44.665%;
+  max-width: 44.665%;
+ }
+
+ section.contacts .col-left {
+  width: 55.335%;
+  max-width: 55.335%;
+ }
+
+ section.info .blocks,
+ section.info-2 .blocks {
+  padding: 0 15px;
+ }
+
+}
+
+@media screen and (max-width:1024px) {
+ section.contacts p {
+  font-size: 20px;
+ }
+
+ section.info-2 .blocks .col-md-3 {
+  padding-left: 15px;
+ }
+
+ section.info-2 .block {
+  padding: 15px;
+ }
+
+ section.contacts .col-left > div {
+  max-width: calc(100% - 135px);
+ }
+
+}
+
+@media screen and (max-width:899px) {
+ section.info-2 .blocks .col-md-3 {
+  padding-left: 15px;
+ }
+
+ section.info-2 .block {
+  padding: 15px;
+ }
+
+ section.contacts p {
+  font-size: 18px;
+ }
+
+ section.contacts a {
+  font-size: 20px;
+  padding-right: 5px;
+ }
+
+ section.contacts .col-left > p {
+  margin-left: 10px;
+ }
+
+ section.contacts .col-left > div {
+  max-width: calc(100% - 114px);
+ }
+
+ section.contacts form p {
+  max-width: calc(100% - 86px);
+ }
+
+ section.contacts form input {
+  width: calc(50% - 5px);
+  margin-left: 5px;
+  padding: 7px;
+ }
+
+ section.contacts form input[type="submit"] {
+  font-size: 16px;
+  width: auto;
+  padding: 8px 25px 6px;
+ }
+
+}
+
+@media screen and (max-width:768px) {
+ section.banner-1 h1 {
+  margin: 0 15px;
+  font-size: 26px;
+  z-index: 2;
+ }
+
+ section.banner-1 h2 {
+  font-size: 18px;
+  padding: 14px 15px 4.5%;
+  position: relative;
+  z-index: 2;
+ }
+
+ section.banner-1 .background {
+  position: relative;
+  z-index: 0;
+ }
+
+ section.banner-1 .background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  z-index: 1;
+ }
+
+ section.contacts {
+  padding: 20px 0;
+ }
+
+ section.contacts .col-right,
+ section.contacts .col-left {
+  width: 100%;
+  max-width: 100%;
+ }
+
+ section.contacts a {
+  padding-right: 10px;
+ }
+
+ section.contacts .col-left > p {
+  display: block;
+  width: 100%;
+  margin: 0;
+ }
+
+ section.contacts .col-left > div {
+  max-width: 100%;
+ }
+
+ section.contacts form p {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+ }
+
+ section.contacts form input {
+  width: 100%;
+  margin: 0 0 5px;
+ }
+
+ section.contacts form input[type="submit"] {
+  margin: 0;
+ }
+
+ section.info,
+ section.info-2 {
+  padding: 30px 0;
+ }
+
+ section.info h2,
+ section.info-2 h2 {
+  font-size: 28px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+ }
+
+ section.info h3,
+ section.info-2 h3 {
+  font-size: 20px;
+ }
+
+ section.info .block,
+ section.info-2 .col-md-3 {
+  margin-bottom: 15px;
+ }
+
+ section.info .col-sm-4:last-child .block,
+ section.info-2 .col-md-3:last-child {
+  margin-bottom: 0;
+ }
+
+ section.info-2 .blocks .col-md-3 {
+  padding: 0;
+ }
+
+}
+
+/* front-page exit */
