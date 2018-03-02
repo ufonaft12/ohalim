@@ -12,5 +12,6 @@ $('.has_submenu').hover(
 		jQuery('#mobile-menu-btn').click(function(){
 			jQuery(this).toggleClass('active');
 			jQuery('.header__menu').toggleClass('active');
+			jQuery('.menu_fon').toggleClass('menu_fon-active');
 		});
 	});
