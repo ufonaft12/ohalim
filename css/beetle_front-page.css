@@ -184,15 +184,19 @@ section.info-2 p {
 section.info-2 {
  background: #f2fbfe;
  padding: 51px 0 60px;
+ margin-bottom: -26px;
 }
 
 section.info-2 .blocks .col-md-3 {
  padding-right: 0;
  padding-left: 0;
+ margin-left: 30px;
+ flex: 0 0 calc(25% - 22.25px);
 }
 
 section.info-2 .blocks .col-md-3:nth-child(4n) {
  padding-left: 0;
+ margin-left: 0;
 }
 
 section.info-2 .block {

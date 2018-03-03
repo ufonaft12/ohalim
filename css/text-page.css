@@ -1,0 +1,92 @@
+section.contacts {
+		background: #189fd9;
+		padding: 33px 0;
+}
+
+section.contacts .col-right {
+		width: 37.665%;
+		max-width: 37.665%;
+}
+
+section.contacts .col-left {
+		width: 62.335%;
+		max-width: 62.335%;
+}
+
+section.contacts .col-right p,
+section.contacts .col-right a,
+section.contacts .col-left > p {
+		line-height: 40px;
+}
+
+section.contacts p {
+		font-size: 24px;
+		color: #fff;
+		margin: 0;
+		display: inline-block;
+		text-align: right;
+		float: right;
+}
+
+section.contacts a {
+		font-size: 24px;
+		font-weight: 700;
+		color: #fff;
+		float: right;
+		padding-right: 10px;
+}
+
+section.contacts a:hover,
+section.contacts a:focus {
+		text-decoration: none;
+		color: #61ce70;
+}
+
+section.contacts .col-left > p {
+		margin-left: 20px;
+		display: inline-block;
+		float: right;
+}
+
+section.contacts .col-left > div {
+		max-width: calc(100% - 158px);
+		float: left;
+}
+
+section.contacts form {
+		margin-top: 1px;
+}
+
+section.contacts form p {
+		display: inline-block;
+		float: right;
+		max-width: calc(100% - 108px);
+}
+
+section.contacts form input {
+		width: calc(50% - 10px);
+		margin-left: 10px;
+		text-align: right;
+		color: #b7b8b9;
+		font-size: 16px;
+		border: 1px solid #d8d9da;
+		padding: 7px 15px;
+}
+
+section.contacts form input[type="submit"] {
+		width: 103px;
+		margin-right: 5px;
+		margin-left: 0;
+		text-align: center;
+		background: #61ce70;
+		font-weight: 700;
+		font-size: 18px;
+		color: #fff;
+		border: 0;
+		margin-top: 1px;
+		padding: 8px 15px 6px;
+}
+
+section.contacts form .ajax-loader {
+		display: none;
+}

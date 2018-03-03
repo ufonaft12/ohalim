@@ -5,10 +5,10 @@
     <div class="col-md-3 first-item">
       <h2>אודות</h2>
       <div class="footer-block">
-      <p>רוניאל אוהלים מעניקה שירותי השכרת אוהלים לכל מטרה, השכרת ציוד לאירועים מסוגים שונים. אנו דואגים ללקוח תוך הקפדה על שירות ומקצועיות בכל הנדרש.</p>
-      <p class="footer-phone">טלפון לבירורים: <a href="tel:072-372-8117" alt="מספר טלפון: 072-3728117">072-372-8117</a></p>
-      <p class="footer-phone_text">מכבדים את כל סוגי כרטיסי האשראי:</p>
-      <img src="/img/ashrai.png" alt="מכבדים את כל סוגי כרטיסי האשראי">
+        <p>רוניאל אוהלים מעניקה שירותי השכרת אוהלים לכל מטרה, השכרת ציוד לאירועים מסוגים שונים. אנו דואגים ללקוח תוך הקפדה על שירות ומקצועיות בכל הנדרש.</p>
+        <p class="footer-phone">טלפון לבירורים: <a href="tel:072-372-8117" alt="מספר טלפון: 072-3728117">072-372-8117</a></p>
+        <p class="footer-phone_text">מכבדים את כל סוגי כרטיסי האשראי:</p>
+        <img src="/img/ashrai.png" alt="מכבדים את כל סוגי כרטיסי האשראי">
       </div>
     </div>
     <div class="col-md-3">
@@ -92,17 +92,19 @@
     </div>
   </div>
 </div>
-<div class="bottom container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-right">
-        <p>© 2018 כל הזכויות שמורות</p>
-      </div>
-      <div class="col-left">
-        <a href="https://digitouch.co.il" alt="קידום אתרים בגוגל" target="_blank">
-          קידום אתרים בגוגל
-          <img src="/img/digi_logo.png" alt="קידום אתרים בגוגל">
-        </a>
+<div class="bottom container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-right">
+          <p>© 2018 כל הזכויות שמורות</p>
+        </div>
+        <div class="col-left">
+          <a class="footer-bottom_text" href="https://digitouch.co.il" alt="קידום אתרים בגוגל" target="_blank">
+            קידום אתרים בגוגל
+            <img src="/img/digi_logo.png" alt="קידום אתרים בגוגל">
+          </a>
+        </div>
       </div>
     </div>
   </div>

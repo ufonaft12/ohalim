@@ -16,6 +16,12 @@ function get_header($page_type) { ?>
 	<?php if($page_type==="front-page") { ?>
 	<link rel='stylesheet' id='beetle-front-page-style-css'  href='/css/beetle_front-page.css' type='text/css' media='all' />
 	<?php } ?>
+		<?php if($page_type==="contacts") { ?>
+	<link rel='stylesheet' id='beetle-front-page-style-css'  href='/css/contacts.css' type='text/css' media='all' />
+	<?php } ?>
+	<?php if($page_type==="text-page") { ?>
+	<link rel='stylesheet' id='beetle-front-page-style-css'  href='/css/text-page.css' type='text/css' media='all' />
+	<?php } ?>
 	<script type='text/javascript' src='/js/jquery.js?ver=1.12.4'></script>
 	<script type='text/javascript' src='/js/jquery-migrate.min.js?ver=1.4.1'></script>
 	<script type='text/javascript' src='/js/bootstrap.min.js?ver=4.0.0'></script>
@@ -62,7 +68,7 @@ function get_header($page_type) { ?>
 								<a href="#">אזורי שירות</a>
 							</li>
 							<li class="menu-item ">
-								<a href="#">צור קשר</a>
+								<a href="contacts.php">צור קשר</a>
 							</li>
 						</ul>
 					</div>
